@@ -11,21 +11,25 @@
 
 <body>
   <main class="bg-neutralCharcoalGray lg:w-full lg:h-screen grid place-items-center">
-    <div class="bg-white h-[60%] w-[60%] rounded-3xl ">
-      <h1></h1>
-      <p></p>
-      <div>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+    <div class="bg-white h-[60%] w-[55%] rounded-3xl p-4 grid grid-cols-12 gap-4">
+      <div class="border border-red-500 col-span-7">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers recieving monthly updates on:</p>
+        <div>
+          <ul>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+        </div>
+        <form class="relative">
+          <label for="">Email Adress</label>
+          <input type="text" placeholder="email@company.com">
+          <p class="absolute">Valid email required</p>
+          <button>Subscribe to monthly newsletter</button>
+        </form>
       </div>
-      <form class="relative">
-        <label for=""></label><input type="text">
-        <p class="absolute"></p>
-        <button></button>
-      </form>
+      <div class="col-span-5 bg-background-desktop bg-center bg-cover rounded-xl"></div>
     </div>
     <div class="hidden"></div>
   </main>

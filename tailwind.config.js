@@ -12,6 +12,12 @@ export default {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
       },
+      backgroundImage: {
+        "background-desktop":
+          "url('/public/assets/images/illustration-sign-up-desktop.svg')",
+        "background-mobile":
+          "url('/public/assets/images/illustration-sign-up-mobile.svg')",
+      },
     },
   },
   plugins: [],
