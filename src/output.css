@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "Roboto";
+
+  src: url("./fonts/Roboto-Regular.ttf") format("truetype");
+
+  font-weight: 400;
+
+  /* Regular */
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+
+  src: url("./fonts/Roboto-Bold.ttf") format("truetype");
+
+  font-weight: 700;
+
+  /* Bold */
+
+  font-style: normal;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -106,9 +130,7 @@
   --tw-contain-style:  ;
 }
 
-/*
-! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com
-*/
+/* ! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -614,4 +636,8 @@ video {
 
 .outline {
   outline-style: solid;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
 }
