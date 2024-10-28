@@ -18,6 +18,9 @@ export default {
         "background-mobile":
           "url('/public/assets/images/illustration-sign-up-mobile.svg')",
       },
+      content: {
+        "red-checkmark": 'url("/assets/images/icon-list.svg")',
+      },
     },
   },
   plugins: [],
