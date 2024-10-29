@@ -19,28 +19,29 @@
         <div>
           <ul class="flex flex-col justify-center gap-2">
             <div class="flex gap-4">
-              <img src="./public/assets/images/icon-list.svg" alt="list icon" class="h-4 w-4">
+              <img src="/assets/images/icon-list.svg" alt="list icon" class="h-4 w-4">
               <li class="text-sm text-neutralDarkSlateGray">Product discovery and building
                 what matters
               </li>
             </div>
             <div class="flex gap-4">
-              <img src="./public/assets/images/icon-list.svg" alt="list icon" class="h-4 w-4">
+              <img src="/assets/images/icon-list.svg" alt="list icon" class="h-4 w-4">
               <li class="text-sm text-neutralDarkSlateGray">Measuring to ensure updates are
                 a success</li>
             </div>
             <div class="flex gap-4">
-              <img src="./public/assets/images/icon-list.svg" alt="list icon" class="h-4 w-4">
+              <img src="/assets/images/icon-list.svg" alt="list icon" class="h-4 w-4">
               <li class="text-sm text-neutralDarkSlateGray">And much more!</li>
             </div>
           </ul>
         </div>
         <form class="mt-4 grid gap-4">
-          <div class="flex flex-col relative">
-            <label class="text-[.8rem] font-bold">Email address</label>
-            <input type="text" placeholder="email@company.com"
+          <div class="flex flex-col relative gap-2">
+            <label class="text-[.6rem] font-bold">Email address</label>
+            <input type="email" placeholder="email@company.com"
               class="h-12 w-full border border-gray-300 rounded-lg placeholder:font-semibold placeholder:text-sm ps-4">
-            <p class="absolute hidden">Valid email required</p>
+            <p class="absolute top-0 right-0 text-[.6rem] font-bold text-primaryTomato" id="errorMsg">Valid email
+              required</p>
           </div>
           <button class="w-full h-12 bg-neutralDarkSlateGray rounded-lg text-white font-bold text-sm">Subscribe to
             monthly
