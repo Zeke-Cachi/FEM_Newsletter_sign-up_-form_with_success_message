@@ -11,18 +11,28 @@
 
 <body>
   <main class="bg-neutralCharcoalGray lg:w-full lg:h-screen grid place-items-center">
-    <div class="bg-white h-[60%] w-[55%] rounded-3xl p-6 grid grid-cols-12 gap-4">
-      <div class="border border-red-500 col-span-6 flex flex-col gap-4 py-16 px-4">
-        <h1 class="text-5xl text-center font-bold">Stay updated!</h1>
-        <p class="text-sm">Join 60,000+ product managers recieving monthly updates on:</p>
+    <div class="bg-white h-[60%] w-[50%] rounded-3xl p-6 grid grid-cols-12">
+      <div class=" col-span-7 flex flex-col gap-4 py-16 px-20">
+        <h1 class="text-5xl font-bold text-neutralDarkSlateGray">Stay updated!</h1>
+        <p class="text-sm text-neutralDarkSlateGray mb-4">Join 60,000+ product managers recieving monthly updates on:
+        </p>
         <div>
-          <ul class="flex flex-col justify-center">
-            <li class="before:content-red-checkmark before:me-4 before:text-sm">Product discovery and building
-              what matters
-            </li>
-            <li class="before:content-red-checkmark before:me-4 before:text-sm">Measuring to ensure updates are
-              a success</li>
-            <li class="before:content-red-checkmark before:me-4 before:text-sm">And much more!</li>
+          <ul class="flex flex-col justify-center gap-2">
+            <div class="flex gap-4">
+              <img src="./public/assets/images/icon-list.svg" alt="list icon" class="h-4 w-4">
+              <li class="text-sm text-neutralDarkSlateGray">Product discovery and building
+                what matters
+              </li>
+            </div>
+            <div class="flex gap-4">
+              <img src="./public/assets/images/icon-list.svg" alt="list icon" class="h-4 w-4">
+              <li class="text-sm text-neutralDarkSlateGray">Measuring to ensure updates are
+                a success</li>
+            </div>
+            <div class="flex gap-4">
+              <img src="./public/assets/images/icon-list.svg" alt="list icon" class="h-4 w-4">
+              <li class="text-sm text-neutralDarkSlateGray">And much more!</li>
+            </div>
           </ul>
         </div>
         <form class="relative">
@@ -32,7 +42,7 @@
           <button>Subscribe to monthly newsletter</button>
         </form>
       </div>
-      <div class="col-span-6 bg-background-desktop bg-center bg-cover rounded-xl"></div>
+      <div class="col-span-5 bg-background-desktop bg-center bg-cover rounded-xl"></div>
     </div>
     <div class="hidden"></div>
   </main>
