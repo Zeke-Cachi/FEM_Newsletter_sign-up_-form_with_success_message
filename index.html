@@ -11,7 +11,7 @@
 
 <body>
   <main class="bg-neutralCharcoalGray lg:w-full lg:h-screen grid place-items-center">
-    <div class="bg-white h-[60%] w-[50%] rounded-3xl p-6 grid grid-cols-12">
+    <div class="bg-white h-[60%] w-[50%] rounded-3xl p-6 grid grid-cols-12 hidden">
       <div class=" col-span-7 flex flex-col gap-4 py-16 px-20">
         <h1 class="text-5xl font-extrabold text-neutralDarkSlateGray">Stay updated!</h1>
         <p class="text-sm text-neutralDarkSlateGray mb-4">Join 60,000+ product managers recieving monthly updates on:
@@ -51,7 +51,16 @@
       </div>
       <div class="col-span-5 bg-background-desktop bg-center bg-cover rounded-xl"></div>
     </div>
-    <div class="hidden"></div>
+    <div class="bg-white w-[25%] h-[50%] rounded-3xl px-16 py-12 grid gap-8">
+      <img src="./public/assets/images/icon-success.svg" alt="success icon">
+      <h2 class="text-5xl font-bold text-neutralDarkSlateGray">Thanks for subscribing!</h2>
+      <p class="text-sm text-neutralDarkSlateGray">A confirmation email has been sent to <span class="font-bold"
+          id="userEmail"></span>.
+        Please open it and click on the button
+        inside to confirm your subscription</p>
+      <button class="w-full h-12 bg-neutralDarkSlateGray rounded-lg text-white font-bold text-sm">Dismiss
+        message</button>
+    </div>
   </main>
 
 
