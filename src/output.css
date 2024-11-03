@@ -670,6 +670,11 @@ video {
   height: 35%;
 }
 
+.size-full {
+  width: 100%;
+  height: 100%;
+}
+
 .h-12 {
   height: 3rem;
 }
@@ -708,6 +713,18 @@ video {
 
 .h-\[50\%\] {
   height: 50%;
+}
+
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.min-h-\[60\%\] {
+  min-height: 60%;
 }
 
 .w-4 {
@@ -916,6 +933,11 @@ video {
   padding-bottom: 3rem;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .pe-12 {
   padding-inline-end: 3rem;
 }
@@ -1066,6 +1088,18 @@ input::placeholder:user-invalid {
   font-weight: 600;
 }
 
+@media (min-width: 768px) {
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .md\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:h-screen {
     height: 100vh;
@@ -1073,5 +1107,49 @@ input::placeholder:user-invalid {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .lg\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .lg\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .xl\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .\32xl\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
