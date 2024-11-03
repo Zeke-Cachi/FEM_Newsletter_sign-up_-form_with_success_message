@@ -35,7 +35,7 @@
             </div>
           </ul>
         </div>
-        <form class="mt-4 grid gap-4">
+        <form class="mt-4 grid gap-4 isolate">
           <div class="flex flex-col relative gap-2">
             <label class="text-[.6rem] font-bold">Email address</label>
             <input type="email" placeholder="email@company.com"
@@ -43,8 +43,11 @@
             <p class="absolute top-0 right-0 text-[.6rem] font-bold text-primaryTomato hidden" id="errorMsg">Valid email
               required</p>
           </div>
-          <button type="submit"
-            class="w-full h-12 bg-neutralDarkSlateGray rounded-lg text-white font-bold text-sm">Subscribe to
+          <button type="submit" class="relative w-full h-12 bg-neutralDarkSlateGray rounded-lg text-white font-bold 
+            text-sm hover:bg-gradient-custom hover:before:content-['hello'] hover:before:size-full 
+            hover:before:absolute hover:before:-bottom-2 hover:before:left-0 hover:before:rounded-lg
+            hover:before:z-[-1] hover:before:blur-lg hover:before:bg-gradient-custom hover:before:opacity-50">Subscribe
+            to
             monthly
             newsletter</button>
         </form>
@@ -58,7 +61,9 @@
           id="userEmail"></span>.
         Please open it and click on the button
         inside to confirm your subscription</p>
-      <button class="w-full h-12 bg-neutralDarkSlateGray rounded-lg text-white font-bold text-sm"
+      <button class="w-full h-12 bg-neutralDarkSlateGray rounded-lg text-white font-bold text-sm hover:bg-gradient-custom hover:before:content-['hello'] hover:before:size-full 
+            hover:before:absolute hover:before:-bottom-2 hover:before:left-0 hover:before:rounded-lg
+            hover:before:z-[-1] hover:before:blur-lg hover:before:bg-gradient-custom hover:before:opacity-50"
         id="dismissButton">Dismiss
         message</button>
     </div>

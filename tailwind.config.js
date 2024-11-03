@@ -17,6 +17,7 @@ export default {
           "url('/public/assets/images/illustration-sign-up-desktop.svg')",
         "background-mobile":
           "url('/public/assets/images/illustration-sign-up-mobile.svg')",
+        "gradient-custom": "linear-gradient(to right, #FD5478, #FF683E)",
       },
       content: {
         "red-checkmark": 'url("/assets/images/icon-list.svg")',
