@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FEM - NewsLetter Signup Form</title>
+  <script type="module" crossorigin src="/assets/index-DDkTcgyN.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-C6DxmMx5.css">
+</head>
+
+<body>
+  <main class="bg-neutralCharcoalGray w-full h-screen grid place-items-center">
+    <div
+      class="bg-white h-full md:h-auto md:min-h-[60%] w-full md:w-[50%] md:rounded-3xl md:p-6 grid grid-rows-3 md:grid-rows-none grid-cols-1 md:grid-cols-12"
+      id="mainScreen">
+      <div class="bg-background-mobile bg-no-repeat bg-cover block md:hidden w-full h-full row-span-1 rounded-b-xl">
+      </div>
+      <div
+        class="col-span-7 flex flex-col gap-4 2xl:py-16 2xl:px-20 md:py-8 md:px-12 px-8 py-8 row-span-2 md:row-span-full">
+        <h1 class="text-4xl xl:text-5xl font-extrabold text-neutralDarkSlateGray">Stay updated!</h1>
+        <p class="text-md md:text-sm text-neutralDarkSlateGray mb-4">Join 60,000+ product managers recieving monthly
+          updates on:
+        </p>
+        <div>
+          <ul class="flex flex-col justify-center gap-2">
+            <div class="flex gap-4">
+              <img src="/assets/images/icon-list.svg" alt="list icon" class="h-4 w-4">
+              <li class="text-md md:text-sm text-neutralDarkSlateGray">Product discovery and building
+                what matters
+              </li>
+            </div>
+            <div class="flex gap-4">
+              <img src="/assets/images/icon-list.svg" alt="list icon" class="h-4 w-4">
+              <li class="text-md md:text-sm text-neutralDarkSlateGray">Measuring to ensure updates are
+                a success</li>
+            </div>
+            <div class="flex gap-4">
+              <img src="/assets/images/icon-list.svg" alt="list icon" class="h-4 w-4">
+              <li class="text-md md:text-sm text-neutralDarkSlateGray">And much more!</li>
+            </div>
+          </ul>
+        </div>
+        <form class="mt-4 grid gap-4 isolate">
+          <div class="flex flex-col relative gap-2">
+            <label class="text-[.7rem] md:text-[.6rem] font-bold">Email address</label>
+            <input type="email" placeholder="email@company.com"
+              class="h-12 w-full border border-gray-300 rounded-lg placeholder:font-semibold text-sm font-bold placeholder:text-sm ps-4">
+            <p class="absolute top-0 right-0 text-[.6rem] font-bold text-primaryTomato hidden" id="errorMsg">Valid email
+              required</p>
+          </div>
+          <button type="submit" class="relative w-full h-12 bg-neutralDarkSlateGray rounded-lg text-white font-bold 
+            text-sm hover:bg-gradient-custom hover:before:content-['hello'] hover:before:size-full 
+            hover:before:absolute hover:before:-bottom-2 hover:before:left-0 hover:before:rounded-lg
+            hover:before:z-[-1] hover:before:blur-lg hover:before:bg-gradient-custom hover:before:opacity-50">Subscribe
+            to
+            monthly
+            newsletter</button>
+        </form>
+      </div>
+      <div class="col-span-5 bg-background-desktop bg-center bg-cover rounded-xl"></div>
+    </div>
+    <div
+      class="bg-white h-screen w-full md:w-[25%] md:h-[50%] md:rounded-3xl p-8 md:px-16 md:py-12 gap-8 hidden grid-rows-2 md:grid-rows-none"
+      id="confirmationModal">
+      <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%3e%3cdefs%3e%3clinearGradient%20id='a'%20x1='100%25'%20x2='0%25'%20y1='0%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%23FF6A3A'/%3e%3cstop%20offset='100%25'%20stop-color='%23FF527B'/%3e%3c/linearGradient%3e%3c/defs%3e%3cg%20fill='none'%3e%3ccircle%20cx='32'%20cy='32'%20r='32'%20fill='url(%23a)'/%3e%3cpath%20stroke='%23FFF'%20stroke-width='4'%20d='m18.286%2034.686%208.334%207.98%2019.094-18.285'/%3e%3c/g%3e%3c/svg%3e" alt="success icon" class="hidden md:block">
+      <h2 class="text-5xl font-bold text-neutralDarkSlateGray hidden md:block">Thanks for subscribing!</h2>
+      <p class="text-sm text-neutralDarkSlateGray hidden md:block">A confirmation email has been sent to <span
+          class="font-bold hidden md:block" id="userEmail"></span>.
+        Please open it and click on the button
+        inside to confirm your subscription
+      </p>
+      <div class="md:hidden row-span-1 md:row-span-1 flex flex-col gap-8 place-self-end">
+        <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='64'%20height='64'%20viewBox='0%200%2064%2064'%3e%3cdefs%3e%3clinearGradient%20id='a'%20x1='100%25'%20x2='0%25'%20y1='0%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%23FF6A3A'/%3e%3cstop%20offset='100%25'%20stop-color='%23FF527B'/%3e%3c/linearGradient%3e%3c/defs%3e%3cg%20fill='none'%3e%3ccircle%20cx='32'%20cy='32'%20r='32'%20fill='url(%23a)'/%3e%3cpath%20stroke='%23FFF'%20stroke-width='4'%20d='m18.286%2034.686%208.334%207.98%2019.094-18.285'/%3e%3c/g%3e%3c/svg%3e" alt="success icon" class="w-16 h-16 md:h-auto md:w-auto">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-neutralDarkSlateGray">Thanks for subscribing!</h2>
+        <p class="text-md md:text-sm text-neutralDarkSlateGray">A confirmation email has been sent to <span
+            class="font-bold" id="userEmailMobile"></span>.
+          Please open it and click on the button
+          inside to confirm your subscription
+        </p>
+      </div>
+      <button
+        class="w-full h-12 bg-neutralDarkSlateGray rounded-lg text-white font-bold text-sm hover:bg-gradient-custom hover:before:content-['hello'] hover:before:size-full 
+            hover:before:absolute hover:before:-bottom-2 hover:before:left-0 hover:before:rounded-lg
+            hover:before:z-[-1] hover:before:blur-lg hover:before:bg-gradient-custom hover:before:opacity-50 place-self-end row-span-1 md:row-span-1"
+        id="dismissButton">Dismiss
+        message</button>
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
