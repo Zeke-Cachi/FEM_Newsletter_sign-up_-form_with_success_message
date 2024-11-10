@@ -11,33 +11,39 @@
 
 <body>
   <main class="bg-neutralCharcoalGray w-full h-screen grid place-items-center">
-    <div class="bg-white min-h-[60%] w-[50%] rounded-3xl p-6 grid grid-cols-12" id="mainScreen">
-      <div class=" col-span-7 flex flex-col gap-4 2xl:py-16 2xl:px-20 md:py-8 md:px-12">
-        <h1 class="text-5xl font-extrabold text-neutralDarkSlateGray">Stay updated!</h1>
-        <p class="text-sm text-neutralDarkSlateGray mb-4">Join 60,000+ product managers recieving monthly updates on:
+    <div
+      class="bg-white h-full md:h-auto md:min-h-[60%] w-full md:w-[50%] md:rounded-3xl md:p-6 grid grid-rows-3 md:grid-rows-none grid-cols-1 md:grid-cols-12"
+      id="mainScreen">
+      <div class="bg-background-mobile bg-no-repeat bg-cover block md:hidden w-full h-full row-span-1 rounded-b-xl">
+      </div>
+      <div
+        class="col-span-7 flex flex-col gap-4 2xl:py-16 2xl:px-20 md:py-8 md:px-12 px-8 py-8 row-span-2 md:row-span-full">
+        <h1 class="text-4xl xl:text-5xl font-extrabold text-neutralDarkSlateGray">Stay updated!</h1>
+        <p class="text-md md:text-sm text-neutralDarkSlateGray mb-4">Join 60,000+ product managers recieving monthly
+          updates on:
         </p>
         <div>
           <ul class="flex flex-col justify-center gap-2">
             <div class="flex gap-4">
               <img src="/assets/images/icon-list.svg" alt="list icon" class="h-4 w-4">
-              <li class="text-sm text-neutralDarkSlateGray">Product discovery and building
+              <li class="text-md md:text-sm text-neutralDarkSlateGray">Product discovery and building
                 what matters
               </li>
             </div>
             <div class="flex gap-4">
               <img src="/assets/images/icon-list.svg" alt="list icon" class="h-4 w-4">
-              <li class="text-sm text-neutralDarkSlateGray">Measuring to ensure updates are
+              <li class="text-md md:text-sm text-neutralDarkSlateGray">Measuring to ensure updates are
                 a success</li>
             </div>
             <div class="flex gap-4">
               <img src="/assets/images/icon-list.svg" alt="list icon" class="h-4 w-4">
-              <li class="text-sm text-neutralDarkSlateGray">And much more!</li>
+              <li class="text-md md:text-sm text-neutralDarkSlateGray">And much more!</li>
             </div>
           </ul>
         </div>
         <form class="mt-4 grid gap-4 isolate">
           <div class="flex flex-col relative gap-2">
-            <label class="text-[.6rem] font-bold">Email address</label>
+            <label class="text-[.7rem] md:text-[.6rem] font-bold">Email address</label>
             <input type="email" placeholder="email@company.com"
               class="h-12 w-full border border-gray-300 rounded-lg placeholder:font-semibold text-sm font-bold placeholder:text-sm ps-4">
             <p class="absolute top-0 right-0 text-[.6rem] font-bold text-primaryTomato hidden" id="errorMsg">Valid email
@@ -54,16 +60,29 @@
       </div>
       <div class="col-span-5 bg-background-desktop bg-center bg-cover rounded-xl"></div>
     </div>
-    <div class="bg-white w-[25%] h-[50%] rounded-3xl px-16 py-12 gap-8 hidden" id="confirmationModal">
-      <img src="./public/assets/images/icon-success.svg" alt="success icon">
-      <h2 class="text-5xl font-bold text-neutralDarkSlateGray">Thanks for subscribing!</h2>
-      <p class="text-sm text-neutralDarkSlateGray">A confirmation email has been sent to <span class="font-bold"
-          id="userEmail"></span>.
+    <div
+      class="bg-white h-screen w-full md:w-[25%] md:h-[50%] md:rounded-3xl p-8 md:px-16 md:py-12 gap-8 hidden grid-rows-2 md:grid-rows-none"
+      id="confirmationModal">
+      <img src="./public/assets/images/icon-success.svg" alt="success icon" class="hidden md:block">
+      <h2 class="text-5xl font-bold text-neutralDarkSlateGray hidden md:block">Thanks for subscribing!</h2>
+      <p class="text-sm text-neutralDarkSlateGray hidden md:block">A confirmation email has been sent to <span
+          class="font-bold hidden md:block" id="userEmail"></span>.
         Please open it and click on the button
-        inside to confirm your subscription</p>
-      <button class="w-full h-12 bg-neutralDarkSlateGray rounded-lg text-white font-bold text-sm hover:bg-gradient-custom hover:before:content-['hello'] hover:before:size-full 
+        inside to confirm your subscription
+      </p>
+      <div class="md:hidden row-span-1 md:row-span-1 flex flex-col gap-8 place-self-end">
+        <img src="./public/assets/images/icon-success.svg" alt="success icon" class="w-16 h-16 md:h-auto md:w-auto">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-neutralDarkSlateGray">Thanks for subscribing!</h2>
+        <p class="text-md md:text-sm text-neutralDarkSlateGray">A confirmation email has been sent to <span
+            class="font-bold" id="userEmailMobile"></span>.
+          Please open it and click on the button
+          inside to confirm your subscription
+        </p>
+      </div>
+      <button
+        class="w-full h-12 bg-neutralDarkSlateGray rounded-lg text-white font-bold text-sm hover:bg-gradient-custom hover:before:content-['hello'] hover:before:size-full 
             hover:before:absolute hover:before:-bottom-2 hover:before:left-0 hover:before:rounded-lg
-            hover:before:z-[-1] hover:before:blur-lg hover:before:bg-gradient-custom hover:before:opacity-50"
+            hover:before:z-[-1] hover:before:blur-lg hover:before:bg-gradient-custom hover:before:opacity-50 place-self-end row-span-1 md:row-span-1"
         id="dismissButton">Dismiss
         message</button>
     </div>

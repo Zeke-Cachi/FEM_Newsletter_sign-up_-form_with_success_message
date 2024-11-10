@@ -7,6 +7,7 @@ const errorMsg: HTMLElement = document.getElementById("errorMsg")!;
 const submitButton: HTMLButtonElement = document.querySelector("button")!;
 
 const emailSpan = document.getElementById("userEmail")!;
+const emailSpanMobile = document.getElementById("userEmailMobile")!;
 const mainScreen = document.getElementById("mainScreen")!;
 const confirmationModal = document.getElementById("confirmationModal")!;
 const dismissButton = document.getElementById("dismissButton")!;
@@ -25,6 +26,7 @@ submitButton?.addEventListener("click", (e) => {
     confirmationModal.classList.remove("hidden");
     confirmationModal.classList.add("grid");
     emailSpan.innerText = input.value;
+    emailSpanMobile.innerText = input.value;
   }
 });
 
